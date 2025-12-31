@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieVerse</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #38bdf8;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #020617, #020617aa);
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .movies {
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .movie-card {
+            background: #020617;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .movie-card h3 {
+            padding: 10px;
+            color: #38bdf8;
+        }
+
+        .movie-card p {
+            padding: 0 10px 15px;
+            font-size: 0.9rem;
+            color: #cbd5f5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🎬 MovieVerse</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Top Rated</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Explore the World of Movies</h2>
+    <p>Discover popular, classic, and trending movies</p>
+</section>
+
+<section class="movies">
+    <div class="movie-card">
+        <img src="https://via.placeholder.com/300x400?text=Inception" alt="Inception">
+        <h3>Inception</h3>
+        <p>A mind-bending sci-fi thriller directed by Christopher Nolan.</p>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://via.placeholder.com/300x400?text=Interstellar" alt="Interstellar">
+        <h3>Interstellar</h3>
+        <p>A journey through space and time to save humanity.</p>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://via.placeholder.com/300x400?text=Avengers" alt="Avengers">
+        <h3>Avengers</h3>
+        <p>Earth’s mightiest heroes come together to fight evil.</p>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://via.placeholder.com/300x400?text=Joker" alt="Joker">
+        <h3>Joker</h3>
